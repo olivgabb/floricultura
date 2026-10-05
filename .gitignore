@@ -34,7 +34,5 @@ Thumbs.db
 .coverage
 htmlcov/
 
-**/settings.py
-
 # Jupyter
 .ipynb_checkpoints/
