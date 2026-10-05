@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+ENV/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# PyCharm
+*.iml
+
+# Testes / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+**/settings.py
+
+# Jupyter
+.ipynb_checkpoints/

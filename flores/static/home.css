@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f8f3;
+    color: #26382a;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Título */
+body::before {
+    content: "🌿 Floricultura";
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2f6b3a;
+    margin-bottom: 35px;
+}
+
+/* Tabela */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho */
+th {
+    background: #39754a;
+    color: white;
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Células */
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e5ece6;
+    font-size: 15px;
+}
+
+/* Linhas */
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f0f7f1;
+}
+
+/* Link do nome da planta */
+td a {
+    color: #2f6b3a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+td a:hover {
+    color: #1d4d29;
+    text-decoration: underline;
+}
+
+/* Preço */
+td:nth-child(2) {
+    color: #286b39;
+    font-weight: bold;
+}
+
+/* Categoria */
+td:nth-child(3) {
+    color: #607565;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 10px;
+    }
+
+    body::before {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 12px 10px;
+    }
+}

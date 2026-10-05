@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ data.nome }} - Floricultura</title>
+
+    <link rel="stylesheet" href="{% static 'planta.css' %}">
+</head>
+
+<body>
+
+    <div class="planta-card">
+
+        <div class="planta-imagem">
+            <img
+                src="{{ data.image_url }}"
+                alt="{{ data.nome }}"
+            >
+        </div>
+
+        <div class="planta-info">
+
+            <a href="/plantas" class="voltar">
+                Voltar para plantas
+            </a>
+
+            <h1>{{ data.nome }}</h1>
+
+            <div class="info">
+                <span>Preço</span>
+                <strong class="preco">
+                    R$ {{ data.preco }}
+                </strong>
+            </div>
+
+            <div class="info">
+                <span>Categoria</span>
+                <strong class="categoria">
+                    {{ data.categoria }}
+                </strong>
+            </div>
+
+            <button
+                class="btn-carrinho"
+                onclick="addToCart()"
+            >
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+
+</html>

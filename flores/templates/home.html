@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <table border='1'>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+        </tr>
+        {% for x in data %}
+        <tr>
+            <td><a href={{x.id}}>{{ x.nome }}</a></td>
+            <td>{{ x.preco }}</td>
+            <td>{{ x.categoria }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
