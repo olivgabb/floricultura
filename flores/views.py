@@ -6,7 +6,7 @@ from flores.models import Planta
 
 def home(request):
     plantas_data = Planta.objects.all()
-    template = loader.get_template('home.html')
+    template = loader.get_template('index.html')
     context = {
         'data':plantas_data
     }
@@ -14,7 +14,7 @@ def home(request):
 
 def planta(request, id):
     plantas_data = Planta.objects.get(id=id)
-    template = loader.get_template('planta.html')
+    template = loader.get_template('detalhe.html')
     context = {
         'data':plantas_data
     }

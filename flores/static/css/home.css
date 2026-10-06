@@ -9,96 +9,179 @@ body {
     background: #f3f8f3;
     color: #26382a;
     min-height: 100vh;
-    padding: 50px 20px;
+    padding-bottom: 50px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 110px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 45px;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+
+.header-content img {
+    height: 80px;
+    width: auto;
+
+    object-fit: contain;
 }
 
 /* Título */
-body::before {
-    content: "🌿 Floricultura";
-    display: block;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
+
+.header-content h1 {
+    margin-left: 18px;
+
     color: #2f6b3a;
-    margin-bottom: 35px;
+
+    font-size: 34px;
+    font-weight: bold;
 }
 
-/* Tabela */
+
+/* TABELA */
+
 table {
     width: 90%;
     max-width: 1000px;
+
     margin: 0 auto;
+
     border-collapse: collapse;
+
     background: white;
+
     border-radius: 14px;
     overflow: hidden;
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+
 /* Cabeçalho */
+
 th {
     background: #39754a;
+
     color: white;
+
     padding: 18px 20px;
+
     text-align: left;
+
     font-size: 16px;
+
     letter-spacing: 0.5px;
 }
 
+
 /* Células */
+
 td {
     padding: 16px 20px;
+
     border-bottom: 1px solid #e5ece6;
+
     font-size: 15px;
 }
 
-/* Linhas */
+
+/* Última linha */
+
 tr:last-child td {
     border-bottom: none;
 }
+
+
+/* Hover */
 
 tr:hover td {
     background: #f0f7f1;
 }
 
-/* Link do nome da planta */
+
+/* Links */
+
 td a {
     color: #2f6b3a;
+
     text-decoration: none;
+
     font-weight: 600;
+
     transition: 0.2s ease;
 }
 
 td a:hover {
     color: #1d4d29;
+
     text-decoration: underline;
 }
 
+
 /* Preço */
+
 td:nth-child(2) {
     color: #286b39;
+
     font-weight: bold;
 }
 
+
 /* Categoria */
+
 td:nth-child(3) {
     color: #607565;
 }
 
-/* Responsividade */
+
+/* RESPONSIVIDADE */
+
 @media (max-width: 600px) {
 
-    body {
-        padding: 30px 10px;
+    header {
+        height: 90px;
+
+        margin-bottom: 30px;
     }
 
-    body::before {
-        font-size: 28px;
-        margin-bottom: 25px;
+    .header-content {
+        width: 95%;
+    }
+
+    .header-content img {
+        height: 60px;
+    }
+
+    .header-content h1 {
+        font-size: 25px;
+
+        margin-left: 12px;
     }
 
     table {
-        width: 100%;
+        width: 95%;
+
         font-size: 14px;
     }
 
