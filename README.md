@@ -125,12 +125,10 @@ Este projeto permite praticar conceitos importantes do desenvolvimento web, como
 * Gerenciamento de arquivos estáticos.
 * Utilização do Git e GitHub para versionamento de código.
 
-## 👨‍💻 Autor
+## Equipe
+- Gabriel de Oliveira Rodrigues
+- João Miguel
+- Vinicius Aragão
+- Guilherme Alves
 
-Desenvolvido por [olivgabb](https://github.com/olivgabb).
 
-Confira o repositório: [github.com/olivgabb/floricultura](https://github.com/olivgabb/floricultura)
-
----
-
-*Projeto desenvolvido com fins de aprendizado e prática de desenvolvimento web com Python e Django.*
